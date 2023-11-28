@@ -33,18 +33,18 @@ function Navbar() {
                             <div className='subrayadoNavLink'></div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/Nosotros" draggable={false}>Paquetes</a>
+                            <a className="nav-link" href="/paquetes" draggable={false}>Paquetes</a>
                             <div className='subrayadoNavLink'></div>
                         </li>
                         {
                             user &&
                             <>
                             <li className="nav-item">
-                                <a className="nav-link" href="/Nosotros" draggable={false}>Mis mascotas</a>
+                                <a className="nav-link" href="/Nosotros" draggable={false}>Mascotas</a>
                                 <div className='subrayadoNavLink'></div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/Nosotros" draggable={false}>Mis pedidos</a>
+                                <a className="nav-link" href="/Nosotros" draggable={false}>Pedidos</a>
                                 <div className='subrayadoNavLink'></div>
                             </li>
                             </>

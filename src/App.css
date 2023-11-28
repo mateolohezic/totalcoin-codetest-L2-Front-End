@@ -139,6 +139,24 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  display: none;
+}
+
+.invalidInput{
+  color: var(--invalid);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 576px) {
 
 }
