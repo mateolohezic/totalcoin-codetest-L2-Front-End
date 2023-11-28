@@ -73,7 +73,7 @@ function CarruselProductosDestacados() {
                     </div>
                     <div>
                         <h2>Pedigree Adulto 15kg</h2>
-                        <h3>$2.000</h3>
+                        <h3>$2.500</h3>
                         <div>
                             <a href="/carrito">
                                 <button type="button">
