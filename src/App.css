@@ -14,7 +14,7 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
-  color: var(--negro);
+  color: var(--blanco);
   font-family: var(--main-font);
 }
 
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 body{
-  background-color: var(--blanco);
+  background-color: var(--negro);
 }
 
 /*
