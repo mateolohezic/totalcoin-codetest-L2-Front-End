@@ -33,7 +33,7 @@ function Navbar() {
                             <div className='subrayadoNavLink'></div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/Nosotros" draggable={false}>Productos</a>
+                            <a className="nav-link" href="/Nosotros" draggable={false}>Paquetes</a>
                             <div className='subrayadoNavLink'></div>
                         </li>
                         {

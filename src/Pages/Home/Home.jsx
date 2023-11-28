@@ -2,6 +2,7 @@ import React from 'react'
 import './home.css'
 import PortadaHome from '../../Components/PortadaHome/PortadaHome'
 import CarruselProductosDestacados from '../../Components/CarruselProductosDestacados/CarruselProductosDestacados'
+import ArmaTuPaqueteHome from '../../Components/ArmaTuPaqueteHome/ArmaTuPaqueteHome'
 
 function Home() {
 
@@ -10,6 +11,7 @@ function Home() {
         <main>
             <PortadaHome/>
             <CarruselProductosDestacados/>
+            <ArmaTuPaqueteHome/>
         </main>
     </>
     )

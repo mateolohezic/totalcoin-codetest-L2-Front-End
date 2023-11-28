@@ -28,7 +28,7 @@ function CarruselProductosDestacados() {
     <>
         <section className='contenedorCarruselProductosDestacados'>
             <h1>Productos destacados</h1>
-            <Carousel infinite autoPlay pauseOnHover centerMode arrows={true} containerClass='carruselProductosDestacados' responsive={responsiveCarousel}>
+            <Carousel infinite autoPlay pauseOnHover arrows={true} containerClass='carruselProductosDestacados' responsive={responsiveCarousel}>
                 <article className='cardProducto'>
                     <div>
                         <img src="https://masonlineprod.vtexassets.com/arquivos/ids/289918/front-view-6557.jpg?v=638242762691730000" alt="Foto Producto" />
