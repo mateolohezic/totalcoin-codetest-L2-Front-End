@@ -1,11 +1,14 @@
 import React from 'react'
 import './home.css'
+import PortadaHome from '../../Components/PortadaHome/PortadaHome'
 
 function Home() {
 
     return (
     <>
-    <h1>Homee</h1>
+        <main>
+            <PortadaHome/>
+        </main>
     </>
     )
 }

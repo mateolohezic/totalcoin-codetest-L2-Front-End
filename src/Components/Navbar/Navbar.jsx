@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.css'
 import logo from '../../assets/logo.png'
 import whatsappIcon from '../../assets/whatsappIcon.png'
@@ -7,7 +7,12 @@ import linkedinIcon from '../../assets/linkedinIcon.png'
 import instagramIcon from '../../assets/instagramIcon.png'
 
 function Navbar() {
-  return (
+
+    const [user, setUser] = useState({ permissions: 'admin'})
+    // const [user, setUser] = useState()
+
+    return (
+    <>
         <nav className="navbar navbar-expand-lg">
             <div className="contenedorNavbar">
                 <a className="navbar-brand navbarBrandResponsive" href="/" draggable={false}>
@@ -28,26 +33,53 @@ function Navbar() {
                             <div className='subrayadoNavLink'></div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/Nosotros" draggable={false}>Nosotros</a>
+                            <a className="nav-link" href="/Nosotros" draggable={false}>Productos</a>
                             <div className='subrayadoNavLink'></div>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/Servicios" draggable={false}>Servicios</a>
-                            <div className='subrayadoNavLink'></div>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/Clientes" draggable={false}>Clientes</a>
-                            <div className='subrayadoNavLink'></div>
-                        </li>
+                        {
+                            user &&
+                            <>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/Nosotros" draggable={false}>Mis mascotas</a>
+                                <div className='subrayadoNavLink'></div>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/Nosotros" draggable={false}>Mis pedidos</a>
+                                <div className='subrayadoNavLink'></div>
+                            </li>
+                            </>
+                        }
                     </ul>
                     <a className="navbar-brand navbarSection2" href="/" draggable={false}>
                         <img src={logo} alt="Logo Barra de Navegación" draggable={false}/>
                     </a>
                     <ul className="navbar-nav navbarSection3">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/#contactForm" draggable={false}>Contacto</a>
-                            <div className='subrayadoNavLink'></div>
-                        </li>
+                        {
+                            user ? <>
+                                {
+                                    user.permissions === 'admin' &&
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="/#contactForm" draggable={false}>Administración</a>
+                                        <div className='subrayadoNavLink'></div>
+                                    </li>
+                                }
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/#contactForm" draggable={false}>Cerrar Sesión</a>
+                                    <div className='subrayadoNavLink'></div>
+                                </li>
+                            </>
+                            :
+                            <>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/#contactForm" draggable={false}>Iniciar Sesión</a>
+                                    <div className='subrayadoNavLink'></div>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/#contactForm" draggable={false}>Registrarse</a>
+                                    <div className='subrayadoNavLink'></div>
+                                </li>
+                            </>
+                        }
                     </ul>
                 </div>
             </div>
@@ -70,7 +102,8 @@ function Navbar() {
                 </a>
             </header>
         </nav>
-  )
+    </>
+    )
 }
 
 export default Navbar
