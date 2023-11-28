@@ -1,11 +1,12 @@
 :root {
   --main-font: 'Satoshi', sans-serif;
   --negro: rgb(31, 31, 31, 1);
-  --azul-claro: rgb(46, 39, 132, 1);
-  --azul: rgb(36, 34, 89, 1);
-  --azul-oscuro: rgb(7, 6, 38, 1);
+  --negro-hover: rgb(51, 51, 51, 1);
+  --menta: rgb(133, 230, 197);
+  --menta-hover: rgb(150, 232, 204);
+  --celeste: rgb(68, 223, 171);
   --blanco: rgb(255, 255, 255, 1);
-  --rojo: rgb(253, 76, 60, 1);
+  --invalid: rgb(253, 76, 60, 1);
 }
 
 * {
