@@ -8,7 +8,7 @@ function PortadaHome() {
             <div className="contenidoPortadaHome">
                 <h1>Bienvenido a <b>TotalCoin Veterinaria</b></h1>
                 <p>¡Conoce el Paquete ideal para tu mascota!</p>
-                <a href="/productos">
+                <a href="/paquetes">
                     <button type="button">Arma tu paquete</button>
                 </a>
             </div>

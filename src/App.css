@@ -2,6 +2,8 @@
   --main-font: 'Satoshi', sans-serif;
   --negro: rgb(31, 31, 31, 1);
   --negro-hover: rgb(51, 51, 51, 1);
+  --negro-light: rgb(81, 81, 81, 1);
+  --negro-light-hover: rgb(101, 101, 101, 1);
   --menta: rgb(103, 204, 185);
   --menta-hover: rgb(120, 204, 185);
   --celeste: rgb(80, 187, 167);
@@ -137,6 +139,24 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
+}
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  display: none;
+}
+
+.invalidInput{
+  color: var(--invalid);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 576px) {
