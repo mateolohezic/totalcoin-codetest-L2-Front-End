@@ -1,0 +1,279 @@
+.cardMiMascota {
+    background-color: var(--blanco);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cardMiMascota img{
+    width: 60%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.cardMiMascota h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.cardMiMascota ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.cardMiMascota ul li{
+    color: var(--negro);
+    opacity: 0.6;
+}
+
+.cardMiMascota .botonesCardMiMascota{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cardMiMascota .botonesCardMiMascota{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cardMiMascota button{
+    transition: all .3s ease;
+}
+
+.cardMiMascota .botonesCardMiMascota button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardMiMascota .botonesCardMiMascota button:first-child{
+    background-color: var(--menta);
+}
+
+.cardMiMascota .botonesCardMiMascota button:first-child:hover{
+    background-color: var(--menta-hover);
+}
+
+.cardMiMascota .botonesCardMiMascota button:last-child{
+    background-color: var(--invalid);
+}
+
+.cardMiMascota .botonesCardMiMascota button:last-child:hover{
+    background-color: var(--invalid-hover);
+}
+
+.cardMiMascota .botonesCardMiMascota button img{
+    width: 15px;
+}
+
+.cardMiMascota > button{
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: var(--menta);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.cardMiMascota > button:hover{
+    background-color: var(--menta-hover);
+}
+
+.cardMiMascota form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    margin: auto;
+}
+
+.inputEditarMascota{
+    width: 100%;
+    margin-top: 1rem;
+    color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.inputEditarMascota h3{
+    color: var(--negro);
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.inputEditarMascota div{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.opcionInputMascota {
+    position: relative;
+}
+
+.opcionInputMascota input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.opcionInputMascota input[type="checkbox"] {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.botonOpcionInputMascota {
+    width: 90px;
+    height: 40px;
+    border-radius: 0.5rem;
+    background-color: var(--negro-hover);
+    color: var(--blanco);
+    transition: transform .3s ease;
+}
+
+.botonOpcionInputMascota {
+    width: 90px;
+    height: 40px;
+    border-radius: 0.5rem;
+    background-color: var(--negro-hover);
+    color: var(--blanco);
+    transition: transform .3s ease;
+}
+
+.opcionInputMascota input:checked ~ .botonOpcionInputMascota{
+    background-color: var(--menta);
+    transform: scale(1.05);
+}
+
+.inputEditarMascota input[type="number"]{
+    width: 100%;
+    height: 40px;
+    background-color: var(--negro-hover);
+    border: none;
+    outline: none;
+    padding-inline: 1rem 5rem;
+    border-radius: 0.5rem;
+}
+
+.inputEditarMascota div{
+    position: relative;
+    width: 100%;
+}
+
+.inputEditarMascota div span{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    color: rgb(255, 255, 255, 0.5);
+    user-select: none;
+}
+
+.inputEditarMascota > label {
+    color: var(--negro);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.botonesEditarMascota{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.botonesEditarMascota button{
+    width: calc((100% - 1rem)/2);
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all .3s ease;
+}
+
+.botonCancelarEditarMascota{
+    background-color: var(--negro-hover);
+}
+
+.botonCancelarEditarMascota:hover{
+    background-color: var(--negro-light);
+}
+
+.botonConfirmarEditarMascota{
+    background-color: var(--menta);
+}
+
+.botonConfirmarEditarMascota:hover{
+    background-color: var(--menta-hover);
+}
+
+.botonesEliminarMascota{
+    width: 100%;
+}
+
+.botonesEliminarMascota h3{
+    color: var(--negro);
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.botonesEliminarMascota div{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.botonesEliminarMascota div button{
+    width: calc((100% - 1rem)/2);
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all .3s ease;
+}
+
+.botonesEliminarMascota div button:first-child{
+    background-color: var(--negro-hover);
+}
+
+.botonesEliminarMascota div button:last-child{
+    background-color: var(--invalid);
+}
