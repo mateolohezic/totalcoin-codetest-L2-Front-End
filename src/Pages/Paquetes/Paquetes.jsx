@@ -2,15 +2,21 @@ import React, { useState } from 'react'
 import './paquetes.css'
 import { useForm } from "react-hook-form"
 import Mascota from '../../Hooks/Mascota'
+import CardPaquete from '../../Components/CardPaquete/CardPaquete'
 
 function Paquetes() {
 
-    const { register, handleSubmit, formState: { errors }} = useForm()
+    const { register, handleSubmit, reset, formState: { errors }} = useForm()
     const [paquete, setPaquete] = useState()
 
     const onSubmit = (data) => {
         const mascota = new Mascota(data.especie,data.edad, data.peso, data.esterilizado);
         setPaquete(mascota.calcularPaquete())
+    }
+
+    const cancelarPaquete = () => {
+        setPaquete()
+        reset()
     }
 
     return (
@@ -45,7 +51,7 @@ function Paquetes() {
                             {...register("edad", {
                                 required: true,
                                 min: 1,
-                                max: 99
+                                max: 240
                             })}
                         />
                         <span>Meses</span>
@@ -100,9 +106,13 @@ function Paquetes() {
                         <p className="invalidInput">Campo requerido.</p>
                     )}
                 </div>
-                <button type="submit" className='botonCalcularPaquetes'>Calcular</button>
+                <button type="submit" className='botonCalcularPaquetes'>Calcular paquete</button>
             </form>
         </section>
+        {
+            paquete &&
+            <CardPaquete paquete={paquete} cancelarPaquete={cancelarPaquete}/>
+        }
     </>
     )
 }

@@ -2,6 +2,8 @@
   --main-font: 'Satoshi', sans-serif;
   --negro: rgb(31, 31, 31, 1);
   --negro-hover: rgb(51, 51, 51, 1);
+  --negro-light: rgb(81, 81, 81, 1);
+  --negro-light-hover: rgb(101, 101, 101, 1);
   --menta: rgb(103, 204, 185);
   --menta-hover: rgb(120, 204, 185);
   --celeste: rgb(80, 187, 167);
