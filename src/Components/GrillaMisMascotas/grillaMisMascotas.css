@@ -1,0 +1,11 @@
+.grillaMascotas {
+    width: 1200px;
+    padding: 3rem 0rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    gap: calc((100% - 23%*4)/3);
+    row-gap: 2rem;
+}

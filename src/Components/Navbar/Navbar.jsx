@@ -40,7 +40,7 @@ function Navbar() {
                             user &&
                             <>
                             <li className="nav-item">
-                                <a className="nav-link" href="/Nosotros" draggable={false}>Mascotas</a>
+                                <a className="nav-link" href="/mascotas" draggable={false}>Mascotas</a>
                                 <div className='subrayadoNavLink'></div>
                             </li>
                             <li className="nav-item">

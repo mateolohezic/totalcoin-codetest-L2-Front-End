@@ -9,6 +9,7 @@
   --celeste: rgb(80, 187, 167);
   --blanco: rgb(255, 255, 255, 1);
   --invalid: rgb(253, 76, 60, 1);
+  --invalid-hover: rgb(250, 114, 102);
 }
 
 *{
@@ -20,8 +21,9 @@
   font-family: var(--main-font);
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, ul{
   margin: 0;
+  padding: 0;
 }
 
 body{

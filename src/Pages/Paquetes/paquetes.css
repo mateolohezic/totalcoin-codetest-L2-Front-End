@@ -104,7 +104,7 @@
     transition: transform .3s ease;
 }
 
-.opcionInputPaquete input:checked ~ .botonOpcionInputPaquete, .opcionInputPaquete input:checked ~ .botonMultipleTestTMD{
+.opcionInputPaquete input:checked ~ .botonOpcionInputPaquete{
     background-color: var(--menta);
     transform: scale(1.05);
 }
