@@ -18,3 +18,20 @@
     font-weight: 300;
     font-size: 1rem;
 }
+
+.contenedorCrearMascota{
+    width: 1200px;
+    margin: auto;
+    padding: 3rem 0rem 0rem 0rem;
+}
+
+.botonAñadirCrearMascota button{
+    background-color: var(--menta);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: all .3s ease;
+}
+
+.botonAñadirCrearMascota button:hover{
+    background-color: var(--menta-hover);
+}
