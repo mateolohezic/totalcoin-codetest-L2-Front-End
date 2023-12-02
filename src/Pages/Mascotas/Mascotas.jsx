@@ -17,7 +17,7 @@ function Mascotas() {
                         <h1>Mis Mascotas</h1>
                         <p>Desde este menú puedes administrar todas tus mascotas y realizar pedidos.</p>
                     </section>
-                    <section className='contenedorCrearMascota'>
+                    <section className='contenedorBotonCrearMascota'>
                         <div className='botonAñadirCrearMascota'>
                             <button type="button" onClick={ () => { setCreating(true) } }>+ Añadir</button>
                         </div>

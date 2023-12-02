@@ -53,22 +53,8 @@ text-overflow: ellipsis;
 
 */
 
-
 ::-webkit-scrollbar {
-  width: 6px;
-  background-color: var(--azul-oscuro);
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--blanco);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--blanco);
+  display: none;
 }
 
 input:-webkit-autofill,

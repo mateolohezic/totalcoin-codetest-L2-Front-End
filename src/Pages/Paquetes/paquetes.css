@@ -109,7 +109,7 @@
     transform: scale(1.05);
 }
 
-.inputPaquetes input[type="number"]{
+.inputPaquetes input[type="number"], .inputPaquetes input[type="text"]{
     width: 300px;
     height: 40px;
     background-color: var(--negro-hover);
@@ -139,9 +139,9 @@
 }
 
 .botonCalcularPaquetes{
-    margin-top: 2rem;
-    background-color: var(--menta);
     width: 300px;
+    margin-top: 2rem;
     padding: 0.5rem 0rem;
     border-radius: 0.5rem;
+    background-color: var(--menta);
 }

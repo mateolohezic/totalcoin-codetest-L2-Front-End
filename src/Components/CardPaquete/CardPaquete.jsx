@@ -5,8 +5,6 @@ import complementoDietarioCaratulaPerro from '../../assets/complementoDietarioCa
 
 function CardPaquete(props) {
 
-    console.log(props);
-
     return (
     <>
         <section className='cardPaquete'>
@@ -18,7 +16,7 @@ function CardPaquete(props) {
                 <article>
                     <img src={alimentoCaratulaPerro} alt="Alimento TotalCoin" />
                     <h3>Alimento Balanceado {props.paquete.alimento} Kg</h3>
-                    <h4>${props.paquete.precioAlimento}</h4>
+                    <h4>${props.paquete.precioAlimento.toLocaleString('es-ES', { style: 'decimal', maximumFractionDigits: 2 })}</h4>
                 </article>
                 {
                     props.paquete.complementoDietario > 0 &&
@@ -27,7 +25,7 @@ function CardPaquete(props) {
                         <article>
                             <img src={complementoDietarioCaratulaPerro} alt="Alimento TotalCoin" />
                             <h3>Complemento Dietario {props.paquete.complementoDietario} Comprimidos</h3>
-                            <h4>${props.paquete.precioComplementoDietario}</h4>
+                            <h4>${props.paquete.precioComplementoDietario.toLocaleString('es-ES', { style: 'decimal', maximumFractionDigits: 2 })}</h4>
                         </article>
                     </>
                 }

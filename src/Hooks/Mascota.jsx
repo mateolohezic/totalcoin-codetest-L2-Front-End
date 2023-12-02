@@ -1,5 +1,6 @@
 class Mascota {
-    constructor(especie, edad, peso, esterilizado) {
+    constructor(nombre, especie, edad, peso, esterilizado) {
+        this.nombre = nombre;
         this.especie = especie;
         this.edad = edad;
         this.peso = peso;
